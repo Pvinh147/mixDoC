@@ -88,10 +88,10 @@ for(i in c(5000, 10000, 20000, 50000, 100000)){
                        mxPath(from="Cxt1", to=c("Cxt2"), free=c(FALSE), value=c(1.0), arrows=2, label=NA),
                        mxPath(from="Cyt1", to=c("Cyt2"), free=c(FALSE), value=c(1.0), arrows=2, label=NA),
                        # ra rc re
-                       mxPath(from="Axt1", to=c("Axt1", "Ayt1"), free=c(FALSE, FALSE), value=c(1.0, ra), arrows=2, label=c(NA, "ra")),
+                       mxPath(from="Axt1", to=c("Axt1", "Ayt1"), free=c(FALSE, raFree), value=c(1.0, ra), arrows=2, label=c(NA, "ra")),
                        mxPath(from="Cxt1", to=c("Cxt1", "Cyt1"), free=c(FALSE, FALSE), value=c(1.0, rc), arrows=2, label=c(NA, "rc")),
                        mxPath(from="Ext1", to=c("Ext1", "Eyt1"), free=c(FALSE, FALSE), value=c(1.0, re), arrows=2, label=c(NA, "re")),
-                       mxPath(from="Axt2", to=c("Axt2", "Ayt2"), free=c(FALSE, FALSE), value=c(1.0, ra), arrows=2, label=c(NA, "ra")),
+                       mxPath(from="Axt2", to=c("Axt2", "Ayt2"), free=c(FALSE, raFree), value=c(1.0, ra), arrows=2, label=c(NA, "ra")),
                        mxPath(from="Cxt2", to=c("Cxt2", "Cyt2"), free=c(FALSE, FALSE), value=c(1.0, rc), arrows=2, label=c(NA, "rc")),
                        mxPath(from="Ext2", to=c("Ext2", "Eyt2"), free=c(FALSE, FALSE), value=c(1.0, re), arrows=2, label=c(NA, "re")),
                        mxPath(from="Cxt1", to=c("Cyt2"), free=c(FALSE), value=(rc), arrows=2, label=c("rc")),
